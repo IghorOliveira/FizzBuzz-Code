@@ -40,7 +40,7 @@ public class FizzBuzz {
         System.out.println("Do you want to enter more numbers/words (1 - Yes, 2 - No)");
         choice = Integer.parseInt(myObj.nextLine()); 
         //Loop to enable the user to enter as many conditions as desired
-        while(choice==1){
+        for(;choice == 1; index++){ 
             System.out.println("Choose a number");
             numbers.add(index,Integer.parseInt(myObj.nextLine()));
             System.out.println("Choose a a word to be attached to "+numbers.get(index)+": ");
